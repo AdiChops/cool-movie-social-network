@@ -1,2 +1,1 @@
-# cool-movie-social-network   
-                                                                                                            
+# cool-movie-social-network
