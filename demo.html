@@ -4,11 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Movie</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel ="icon" type="image/x-icon" href="/hello/favicon.ico">
+    <!-- this doesn't work-->
+    <style>
+        h1{
+            color: yellow;
+            background-color: grey;
+        }
+        h2{
+            color: red;
+            background-color: grey
+        }
+        body{
+            background-color: black;
+        }
+        table{
+            color: green;
+        }
+        table, th, td{
+            border: 1px solid green;
+        }
+        p{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <p>hello</p>
+    <div class = "Marvel">
+        <h1>Marvel Movies</h1>
+    </div>
+    
+    <div clas = "Spiderman">
+        <h2>Spiderman series</h2>
+        <table>
+            <caption>Spiderman</caption>
+            <thr>
+                <th>Movie Name</th>
+                <th>Running time</th>
+            </thr>
+            <tr>
+                <td>Spiderman Homecoming </td>
+                <td>Running time: 00:00</td>
+            </tr>
+            <tr>
+                <td>Spiderman Far From Home</td>
+                <td>Running time: 00:00</td>
+            </tr>
+            <tr>
+                <td>Spiderman No way home</td>
+                <td>Running time: 00:00</td>
+            </tr>
+            
+        </table>
+
+        <i class="fas fa-cloud"></i>
+        <!-- Icon doesn't show up-->
+        <p id = "demo">This webpage is specific to <span style="color: red;font-weight:bold"> Spiderman</span> in Marvel seires.; </p>
+
+       
+    </div>
+
+    <script>
+        function myFunction(){
+            document.getElementsById("demo").style.fontSize = "25px";
+            document.getElementsById("demo").style.color = "green";
+        }
+    </script>
+    
+    <div class = "center">
+        <button type="button" onclick ="myFunction()"> Click me!
+        </button>
+    </div>
+    
+    <!-- this doesn't work as well. Also, how can I align the button to other part?-->
+
+    <img src="https://www.dualshockers.com/static/uploads/2021/11/Spiderman.jpg" style ="width:100%;">
+    
+    <p>Do you want to know more about Spiderman? Here is the link.</p>
+
+    <div class = "center">
+        <a href="https://en.wikipedia.org/wiki/Spider-Man" target = "_blank">Click Click</a>
+    </div>
+   
 </body>
+
 </html>
 
 
