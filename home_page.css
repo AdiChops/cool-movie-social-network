@@ -1,0 +1,47 @@
+.site-name {
+    text-decoration: none;
+    font-family: 'Gill Sans MT';
+    color: #fcc252;
+    font-size: 24px;
+    text-align: left;
+}
+
+.navigation-bar {
+    text-decoration: none;
+    font-family: 'Gill Sans MT';
+    color: white;
+    font-size: 24px;
+    background-color: #AB0828;
+    padding: 20px;
+    text-align: right;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}    
+
+.search-bar {
+    font-size: 25px;
+    font-family: 'Gill Sans MT';
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.search-icon {
+    padding: 12px;
+    background-image: url ('');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+li {
+    list-style: none;
+    font-size: 24px;
+    font-family: 'Gill Sans MT';
+    margin-top: 30px;
+}
+
+img {
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
