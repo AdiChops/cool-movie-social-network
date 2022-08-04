@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    height: 50px;
+    opacity: 0.5;
+    outline-style:dashed;
+    text-shadow: 2px 2px;
+}
+  
+  h2{
+    text-align: center;
+    height: 50px;
+    border-style: dashed;
+    text-shadow: 2px 2px;
+  }
+  
+  p {
+    margin : 20px;
+    padding : 20px;
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    overflow: auto;
+  }
+
+  i{color:white;}
+  a:link {
+    background-color: yellow;
+  }
+  a:visited {
+    background-color: cyan;
+  }
+  table {
+    width: 100%;
+  }
+  img.fixed{
+    position: fixed;
+    bottom:0;
+    right:0;
+  }
+  .center {
+    margin: auto;
+    width: 12%;
+    padding: 10px;
+  }
+  
+
+
+
+
+
+
