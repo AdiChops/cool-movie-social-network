@@ -1,0 +1,60 @@
+Movie
+- Title
+- Release Year
+- Genre (start off with 1)
+- Director <-
+- Actors <-
+- Producers <-
+- Plot
+- Rating
+- Cover Art URL
+- Link to Wikipedia page of Movie
+- Link to IMDb page of the movie
+- Country
+- Primary Language
+- Subtitle Languages
+- [Platforms on which movie is available]
+- Runtime of Movie
+
+Person/Cast Member
+- Name
+- Birth Date
+- [Role/Occupation]
+- [{Movie, [roles]}]
+- Country of Origin
+
+User
+- Username
+- Name
+- Email
+- Password* (hashing)
+- [Followers (Users)]
+- [Following (Users)]
+- Join Date
+- [Favourite Movies (Movies)]
+- [Hosted Watch Parties (watch parties)]
+- [Joined Watch Parties (watch parties)]*
+- [Messages]
+
+Watch Party
+- Host
+- Timer
+- Date/Time
+- Time in Movie (what point did watch party end in movie)
+- Movie
+- Privacy
+- [Attendees (Users)]
+- [Invited (Users)]
+- Chat History [Message]<-
+
+Message
+- User
+- User Sent To? (null -> watch party, otherwise direct message)
+- Date/Time
+- Lobby
+
+Attendance
+- User
+- Watch Party
+- Time in Movie/Progress
+- Completed?
