@@ -4,9 +4,18 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href='../styles/styles.css')
         title Favourite Movies
     body 
         h1 Favourite Movies
         ul 
             each movie in movies
-                li #{movie}
+                a(href="http://localhost:3000/movies/" + movie._id)
+                    img#blue(src=movie.coverArtUrl)
+                    div#behind 
+                        h2= movie.title
+                        h3= movie.releaseYear
+                        h3= movie.genre
+                        p= movie.plot
+                        h3= movie.rating
+        script(src="../scripts/dom.js") 

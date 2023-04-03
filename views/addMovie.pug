@@ -7,10 +7,18 @@ html(lang="en")
         title Adding a New Movie
     body 
         h1 Add a New Movie
-        form(action="/", method="POST")
+        form(action="/movies", method="POST")
             label(for="title") Movie Title
             input(type="text", name="title")
             label(for="movieYear") Movie Year
             input(type="number", name="releaseYear")
+            label(for="movieGenre") Genre
+            input#movieGenre(type="text", name="movieGenre")
+            label(for="plot") Plot 
+            textarea#plot(name="plot")
+            label(for="rating") Rating
+            input#rating(type="number", name="rating")
+            label(for="poster") Poster
+            input#poster(type="text", name="coverArtUrl")
             button(type="submit") Add Movie
         a(href="/") Back to Home

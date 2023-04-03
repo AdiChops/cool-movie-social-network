@@ -1,20 +1,21 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+const path = require('path');
+
 const app = express();
 
 const Movie = require("./models/movieModel");
+const Person = require("./models/personModel");
 const port = 3000;
 
 app.set('views');
 app.set('view engine', 'pug');
 
+app.use(express.static('public'));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use((next) => {
-    console.log("Middleware");
-    next();
-})
 
 // C-Create, R-Read, U-Update, D-Delete
 
@@ -52,7 +53,6 @@ app.delete('/movies/:id', (request, response) => {
     response.send("Movie deleted!")
 });
 // GET /movies/123
-
 app.get('/movies', (request, response) => {
     let query = {};
     if(request.query.title) {
@@ -79,6 +79,22 @@ app.get('/movies/:id', (request, response) => {
         }
     })
 });
+
+app.get("/addPerson", (req, res)=>{
+    res.render("addPerson");
+})
+
+app.post("/persons", (req, res)=>{
+    let newPer = Person(req.body);
+    newPer.save((err)=>{
+        if(err){
+            res.status(500);
+            res.send("error!");
+        }
+        res.send(201);
+        res.send("saved successfully!");
+    });
+})
 
 
 app.get(["/test", "/testPage"], (request, response) => {
